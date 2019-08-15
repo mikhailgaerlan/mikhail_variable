@@ -1,0 +1,50 @@
+# Analysis
+
+Here we analize the simulation output found when we run AgentsSimulation.java
+
+- ParseSimData.py (run this first): 
+  - First, add the directory files are listed
+  - Second, add the file name(s) via "read_file_1"
+  - State the number of nodes via NumNodes
+  - State the number of timesteps recorded 
+    (the simulation currently outputs 2 timesteps: before the shock and the end of the simulation)
+  - Output: 
+    - "batch": Index of the simulation. Each index is for a simulation with a unique set of parameters.
+    - "run": Index of the repeated simulations
+    - "Num_Players": Number of agents
+    - "noise": "p" parameter. Probability an agent rewires an edge
+    - "pre-tie cost": Pre-shock tie cost
+    - "tri-benefit": "d" parameter. The benefit of an agent being a vertex of a triangle in a given layer
+    - "spillover-payoff": "e" parameter. The benefit of an agent connecting to the same neighboring node across both layers
+    - "one layer?": Is simulation on 1 layer? By default it is on 2 layers.
+    - "num_shocked": Number of nodes shocked by the end of the experiment
+    - "post-shock cost": Post-shock tie cost
+    - "Shocked?": Is node shocked?
+    - "layer": Network layer (either layer 0 or 1)
+    - "i": node "i"...
+    - "j": connects to node "j"?
+
+
+- To run NodalStatistics.py:
+  - We assume only two timesteps are listed: just before a shock, 
+    and at the end of the simualtion (this is the default in AgentsSimulation.java)
+  - First, add the directory files are listed
+  - Second, add the file name(s) via "read_file_1"
+  - State the number of nodes via NumNodes
+  - Finally decide if you want to code to be verbose (verbose = 1) or not (verbose = 0)
+  - Output: 
+    - "Noise": "p" parameter. Probability an agent rewires an edge
+    - "Pre-Cost": Pre-shock tie cost
+    - "triangle_benefit": "d" parameter. The benefit of an agent being a vertex of a triangle in a given layer
+    - "spillover-benefit": "e" parameter. The benefit of an agent connecting to the same neighboring node across both layers
+    - "pre-shock_utility": The utility of an agent before a shock
+    - "pre-shock_degree": The degree (total number ties across both layers) before a shock
+    - "pre-shock_frac_spillover": The fraction of ties that connect to the same agents across both layers before a shock
+    - "pre-shock_clustering": The local clustering coefficient before a shock
+    - "post-shock_utility": The utility of an agent at the end of the simulation
+    - "post-shock_degree": The degree (total number ties across both layers) at the end of the simulation
+    - "post-shock_frac_spillover": The fraction of ties that connect to the same agents across both layers at the end of the simulation
+    - "post-shock_clustering": The local clustering coefficient at the end of the simulation
+    - "Shocked?": Has this node been shocked at the end of the simulation?
+    - "Fraction_neighbors_shocked": How many neighbors (as measured before the shock) were shocked?
+    - "num_nodes_shocked": Number of nodes in the network that were shocked

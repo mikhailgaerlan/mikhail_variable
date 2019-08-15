@@ -1,0 +1,20 @@
+# Multiplex Simulation Code (Agent-Based Model)
+
+This code is used to create the simulations we analyze in our paper. 
+N.B. this code requires MASON to run: https://cs.gmu.edu/~eclab/projects/mason/
+
+- To run: put all the java code in one folder and run with your favorite Java compiler. 
+  We specifically use:
+
+Eclipse IDE for Java Developers
+Version: Neon.3 Release (4.6.3)
+
+To generate simulation data: 
+
+- In AgentsSimulation.java, go to: public static void main(String[] args)
+- Add the appropriate parameters for the simulation
+- At the top of the page: 
+  - determine the number of timesteps with "lengthOfSimulations"
+  - determine the number of times simulations are run with "numberOfSimulations"
+  - Name the file with "datafilename"
+- Run AgentsSimulation.java
