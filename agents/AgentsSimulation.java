@@ -1,20 +1,6 @@
 package agents;
-/* Copyright 2016 Paul Smaldino (paul.smaldino@gmail.com)
- * 
- * A dynamic model of network formation. Essentially a two-layer multiplex, N-player extension
- * of a model described in Burger & Buskens (2009; Social Networks). 
- * 
- * Associated paper (in preparation): 
- * Smaldino PE, D'Souza R, Maoz Z. 
- * Resilience of Single-Layer and Multiplex Networks Following Sudden Changes to Tie Costs.
- * 
- * Requires the MASON simulation library on the build path: 
- * http://cs.gmu.edu/~eclab/projects/mason/
- * 
- * UPDATES
- * v 1.1. 
- * -change data collection to column format for network adjacency matrix. 
- * 
+/* Copyright 2019 Keith Burghardt
+ * Edited by Mikhail Gaerlan
  */
 
 
